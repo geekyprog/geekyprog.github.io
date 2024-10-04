@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Programming Instructions</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fixed title with background */
+        h1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(50, 50, 50, 0.9); /* Semi-transparent background */
+            color: #ff6347; /* Tomato color */
+            text-align: center;
+            padding: 20px;
+            font-size: 3rem;
+            margin: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 10; /* Ensure it stays on top */
+        }
+
+        /* Main container for multiple cards */
+        .container {
+            margin-top: 120px; /* Adjust to prevent overlap with fixed title */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Space between cards */
+        }
+
+        /* Glassy card style */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            display: block;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #87ceeb; /* Skyblue color */
+        }
+    </style>
+</head>
+<body>
+    <h1>R Programming</h1>
+
+    <!-- Container holding all cards -->
+    <div class="container">
+        <!-- Instruction Card 1 -->
+        <div class="card">
+            <h2>Instruction Set 1</h2>
+            <p>Follow these steps to install R:</p>
+            <ul>
+                <li>Visit the official R website.</li>
+                <li>Download the version suitable for your operating system.</li>
+                <li>Install R and set up RStudio.</li>
+            </ul>
+        </div>
+
+        <!-- Instruction Card 2 -->
+        <div class="card">
+            <h2>Instruction Set 2</h2>
+            <p>How to write and run a basic R script:</p>
+            <ul>
+                <li>Open RStudio.</li>
+                <li>Create a new script by clicking 'File' &gt; 'New File' &gt; 'R Script'.</li>
+                <li>Write your R code and click 'Run'.</li>
+            </ul>
+        </div>
+
+        <!-- Instruction Card 3 -->
+        <div class="card">
+            <h2>Instruction Set 3</h2>
+            <p>Using R libraries:</p>
+            <ul>
+                <li>Install a library by using <code>install.packages("package_name")</code>.</li>
+                <li>Load the library using <code>library(package_name)</code>.</li>
+                <li>Explore the functions within the package by checking the documentation.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
