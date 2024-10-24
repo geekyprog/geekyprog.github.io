@@ -66,36 +66,58 @@
 <body>
 
     <!-- Next Program Button -->
-    <a href="2.html" class="next-program-btn">Next Program</a>
+    <a href="#nextProgram" class="next-program-btn">Next Program</a>
 
-    <h1>Program 1</h1>
+    <h1>Program 3</h1>
 
     <div class="code-container">
-        # Demonstrating different data structures in R
+        # Demonstrating Operators, Control Structures, Default Arguments, and Complex Return in R
 
-        # 1. Vector
-        my_vector <- c(10, 20, 30, 40)
-        print("Vector:")
-        print(my_vector)
+        # 1. Operators
+        a <- 10
+        b <- 5
+        sum_result <- a + b  # Addition
+        diff_result <- a - b  # Subtraction
+        prod_result <- a * b  # Multiplication
+        div_result <- a / b  # Division
+        mod_result <- a %% b  # Modulo
 
-        # 2. List
-        my_list <- list(name = "Alice", age = 25, scores = c(80, 90, 85))
-        print("List:")
-        print(my_list)
+        print(paste("Sum:", sum_result))
+        print(paste("Difference:", diff_result))
+        print(paste("Product:", prod_result))
+        print(paste("Division:", div_result))
+        print(paste("Modulo:", mod_result))
 
-        # 3. Matrix
-        my_matrix <- matrix(1:9, nrow = 3, ncol = 3)
-        print("Matrix:")
-        print(my_matrix)
+        # 2. Control Structures
+        if (a > b) {
+            print("a is greater than b")
+        } else {
+            print("b is greater than or equal to a")
+        }
 
-        # 4. Data Frame
-        my_dataframe <- data.frame(
-            name = c("John", "Jane", "Tom"),
-            age = c(23, 35, 29),
-            score = c(88, 92, 75)
-        )
-        print("Data Frame:")
-        print(my_dataframe)
+        for (i in 1:5) {
+            print(paste("Iteration:", i))
+        }
+
+        # 3. Function with Default Arguments
+        my_function <- function(x = 1, y = 2) {
+            return(x + y)
+        }
+
+        print(paste("Sum with default arguments:", my_function()))  # Default arguments
+        print(paste("Sum with custom arguments:", my_function(10, 20)))  # Custom arguments
+
+        # 4. Returning a Complex Object (List)
+        complex_function <- function(a, b) {
+            sum_val <- a + b
+            prod_val <- a * b
+            result <- list(sum = sum_val, product = prod_val)
+            return(result)
+        }
+
+        complex_result <- complex_function(3, 4)
+        print("Complex object returned:")
+        print(complex_result)
     </div>
 
 </body>

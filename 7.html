@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Code Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .code-container {
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            user-select: none; /* Disable text selection */
+        }
+
+        .code-container::before {
+            content: "R Code:";
+            display: block;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Disable copy-pasting */
+        .code-container {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Style for the Next Program button */
+        .next-program-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #61dafb;
+            color: #282c34;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .next-program-btn:hover {
+            background-color: #49b8e1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Next Program Button -->
+    <a href="#nextProgram" class="next-program-btn">Next Program</a>
+    <br>
+    <h1>program 7: Write a R program that includes linear algebra operations on vectors and matrices.</h1>
+
+    <div class="code-container">
+        # Create sample vectors and matrices
+        vector_a <- c(1, 2, 3)
+        vector_b <- c(4, 5, 6)
+        matrix_A <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 2)
+        matrix_B <- matrix(c(7, 8, 9, 10, 11, 12), nrow = 2)
+        
+        # Vector addition
+        vector_sum <- vector_a + vector_b
+        cat("Vector A + Vector B:", vector_sum, "\n")
+        # Vector subtraction
+        vector_diff <- vector_a - vector_b
+        cat("Vector A - Vector B:", vector_diff, "In")
+
+        # Scalar multiplication
+        scalar <- 2
+        vector_scaled <- scalar * vector_a
+        cat("Scalar Multiplication:", vector_scaled, "In")
+
+        # Dot product (inner product) of vectors
+        dot_product <- sum(vector_a * vector_b)
+        cat("Dot Product of Vector A and Vector B:", dot_product, "Vn")
+
+        # Matrix addition
+
+        matrix_sum <- matrix_A+ matrix_B
+        cat("Matrix A + Matrix Biln")
+        print(matrix_sum)
+
+        # Matrix subtraction
+        matrix_diff <- matrix_A - matrix_B
+        cat("Matrix A - Matrix B:in")
+        print(matrix_diff)
+
+        # Matrix multiplication
+        matrix_product <- matrix_A %*% matrix_B
+        cat("Matrix A * Matrix B:ln")
+        print(matrix_product)
+
+        # Matrix transpose
+        matrix_transposed <- t(matrix_A)
+        cat("Transpose of Matrix Ailn")
+        print(matrix_transposed)
+
+        # Matrix determinant
+
+        matrix_det <- det(matrix_A)
+        cat("Determinant of Matrix A:", matrix_det, "In")
+
+        # Matrix inverse
+        matrix_inverse <- solve(matrix_A)
+        cat("Inverse of Matrix A:in")
+        print(matrix_inverse)
+    </div>
+
+</body>
+</html>

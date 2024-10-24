@@ -66,36 +66,31 @@
 <body>
 
     <!-- Next Program Button -->
-    <a href="2.html" class="next-program-btn">Next Program</a>
+    <a href="3.html" class="next-program-btn">Next Program</a>
 
-    <h1>Program 1</h1>
+    <h1>Program 2</h1>
 
     <div class="code-container">
-        # Demonstrating different data structures in R
+        # Demonstrating Variables, Constants, and Data Types in R
 
-        # 1. Vector
-        my_vector <- c(10, 20, 30, 40)
-        print("Vector:")
-        print(my_vector)
+        # 1. Variable Declaration
+        my_var <- 42  # Numeric variable
+        my_name <- "Alice"  # String variable
+        is_active <- TRUE  # Boolean variable
 
-        # 2. List
-        my_list <- list(name = "Alice", age = 25, scores = c(80, 90, 85))
-        print("List:")
-        print(my_list)
+        # 2. Constant Declaration using 'const' function
+        my_constant <- 3.14159  # Pi constant (no direct const in R, just don't change the value)
 
-        # 3. Matrix
-        my_matrix <- matrix(1:9, nrow = 3, ncol = 3)
-        print("Matrix:")
-        print(my_matrix)
+        # 3. Data Types
+        num_type <- typeof(my_var)  # Numeric type
+        char_type <- typeof(my_name)  # Character type
+        bool_type <- typeof(is_active)  # Logical type (Boolean)
 
-        # 4. Data Frame
-        my_dataframe <- data.frame(
-            name = c("John", "Jane", "Tom"),
-            age = c(23, 35, 29),
-            score = c(88, 92, 75)
-        )
-        print("Data Frame:")
-        print(my_dataframe)
+        # Print the variables and their types
+        print(paste("Numeric Variable:", my_var, "Type:", num_type))
+        print(paste("String Variable:", my_name, "Type:", char_type))
+        print(paste("Boolean Variable:", is_active, "Type:", bool_type))
+        print(paste("Constant Value:", my_constant))
     </div>
 
 </body>
