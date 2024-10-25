@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Code Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .code-container {
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            user-select: none; /* Disable text selection */
+        }
+
+        .code-container::before {
+            content: "R Code:";
+            display: block;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Disable copy-pasting */
+        .code-container {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Style for the Next Program button */
+        .next-program-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #61dafb;
+            color: #282c34;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .next-program-btn:hover {
+            background-color: #49b8e1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Next Program Button -->
+    <a href="#nextProgram" class="next-program-btn">Next Program</a>
+    <br>
+    <h1>8: Write a R program for any visual representation of an object with creating graphs
+        using graphic functions: Plot(),Hist(),Linechart(),Pie(),Boxplot(),Scatterplots().</h1>
+
+    <div class="code-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Code Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .code-container {
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            user-select: none; /* Disable text selection */
+        }
+
+        .code-container::before {
+            content: "R Code:";
+            display: block;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Disable copy-pasting */
+        .code-container {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Style for the Next Program button */
+        .next-program-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #61dafb;
+            color: #282c34;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .next-program-btn:hover {
+            background-color: #49b8e1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Next Program Button -->
+    <a href="#nextProgram" class="next-program-btn">Next Program</a>
+    <br>
+    <h1>9: Write a R program any dataset containing dataframe objects, indexing and subsetting data frames, and employ manipulating and analyzing data.</h1>
+
+    <div class="code-container">
+        # Sample data frame
+        data <- data.frame(
+        ID = 1:6,
+        Name = c("Alice", "Bob", "Charlie", "David", "Eve", "Frank"),
+        Age = c(25, 30, 35, 28, 40, 32),
+        Score = c(95, 88, 92, 79, 87, 91)
+        )
+        
+        # Display the entire data frame
+        cat("Original Data Frame:\n")
+        print(data)
+        
+        # Indexing and subsetting data frames
+        # Select rows where Age is greater than 30
+        subset_data <- data[data$Age > 30, ]
+        cat("InSubsetting Data Frame (Age > 30):\n")
+        print(subset_data)
+        
+        # Select specific columns
+        selected_columns <- data[, c("Name", "Score")]
+        cat("\nSelecting Specific Columns:\n")
+        print(selected_columns)
+
+        # Sorting data frame by Score in descending order
+        sorted_data <- data[order(-data$Score), ]
+        cat("InSorting Data Frame by Score (Descending Order):\n")
+        print(sorted_data)
+
+        # Summary statistics
+        summary_stats <- summary(data$Score)
+        cat("\nSummary Statistics of Score:\n")
+        print(summary_stats)
+
+        # Mean and median of Age
+        mean_age <- mean(data$Age)
+        median_age <- median(data$Age)
+        cat("InMean Age:", mean_age, "In")
+        cat("Median Age:", median_age, "\n")
+    </div>
+
+</body>
+</html>

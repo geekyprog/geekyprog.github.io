@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Code Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .code-container {
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            user-select: none; /* Disable text selection */
+        }
+
+        .code-container::before {
+            content: "R Code:";
+            display: block;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Disable copy-pasting */
+        .code-container {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Style for the Next Program button */
+        .next-program-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #61dafb;
+            color: #282c34;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .next-program-btn:hover {
+            background-color: #49b8e1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Next Program Button -->
+    <a href="#nextProgram" class="next-program-btn">Next Program</a>
+    <br>
+    <h1>8: Write a R program for any visual representation of an object with creating graphs
+        using graphic functions: Plot(),Hist(),Linechart(),Pie(),Boxplot(),Scatterplots().</h1>
+
+    <div class="code-container">
+        # Generate sample data for visualization
+set.seed(123)
+data <- morm(100)
+
+# Plot
+plot(data, main = "Scatter Plot", xlab = "X-axis", ylab = "Y-axis", pch = 19, col = "blue")
+
+# Histogram
+hist(data, main = "Histogram", xlab = "Value", ylab = "Frequency", col = "lightblue")
+
+# Line Chart
+time <- 1:10
+values <- morm(10)
+plot(time, values, type = "I", main = "Line Chart", xlab = "Time", ylab = "Value", col = "green")
+# Pie Chart
+slices <- c(10, 20, 15, 5)
+labels <- c["A", "B", "C", "D")
+pie(slices, labels = labels, main ="Ple Chart")
+
+# Boxplot
+boxplot(data, main = "Box Plot", xlab = "Data", col = "orange")
+
+# Scatter Plot
+set.seed(456)
+x <- morm(50)
+y <- 2 * x + morm(50)
+plot(x, y. main = "Scatter Plot", xlab = "X", ylab = "Y", pch = 20, col = "red")
+abline(Im(y ~ x), col = "blue")
+    </div>
+
+</body>
+</html>
